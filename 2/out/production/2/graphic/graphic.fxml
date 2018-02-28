@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Spinner?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="graphic.Controller">
+    <LineChart fx:id="linechart" stylesheets="@graphic.css">
+        <xAxis>
+            <NumberAxis fx:id="xAxis"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxis"/>
+        </yAxis>
+    </LineChart>
+    <HBox>
+        <Button fx:id="bfile" text="file" onAction="#setFile"/>
+        <Button fx:id="bapprox" text="approx" onAction="#drawApprox"/>
+        <Spinner fx:id="spinner" prefWidth="75"/>
+        <Button fx:id="bmode" text="change" onAction="#changeMode"/>
+    </HBox>
+</VBox>
