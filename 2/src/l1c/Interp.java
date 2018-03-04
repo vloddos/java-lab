@@ -2,6 +2,8 @@ package l1c;
 
 public class Interp extends Polynom {
 
+    public Solver s;
+
     public Interp(double[] X, double[] F, String method) throws Exception {
         super(X.length - 1);
 
@@ -11,7 +13,7 @@ public class Interp extends Polynom {
             for (j = 0; j <= this.n; ++j)
                 A[i][j] = Math.pow(X[i], j);
 
-        Solver s = new Solver(A, method);
-        this.a = s.getSolve(F);
+        this.s = new Solver(A, method);
+        this.a = this.s.getSolve(F);
     }
 }

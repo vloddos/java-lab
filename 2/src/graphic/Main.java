@@ -2,7 +2,6 @@ package graphic;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -13,7 +12,7 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("graphic.fxml"));
 
-        Scene scene = new Scene(root, 500, 500);
+        Scene scene = new Scene(root);
 
         stage.setTitle("FXML Welcome");
         stage.setScene(scene);

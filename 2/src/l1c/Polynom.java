@@ -1,5 +1,7 @@
 package l1c;
 
+import java.io.File;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Polynom {
@@ -7,14 +9,17 @@ public class Polynom {
     public int n;//polynom pow
     public double a[];//a.length=n+1
 
-    public static void getData(Scanner s, double[] X, double[] F) {
-        int i;
-
-        for (i = 0; i < X.length; ++i)
-            X[i] = Double.parseDouble(s.next());
-
-        for (i = 0; i < X.length; ++i)
-            F[i] = Double.parseDouble(s.next());
+    public static double[][] getData(File file) throws Exception {
+        Scanner s = new Scanner(file);
+        s.useDelimiter("\\s+");
+        s.useLocale(Locale.ENGLISH);
+        int i, n = s.nextInt();
+        double[][] XF = new double[][]{new double[n + 1], new double[n + 1]};
+        for (i = 0; i <= n; ++i)
+            XF[0][i] = s.nextDouble();
+        for (i = 0; i <= n; ++i)
+            XF[1][i] = s.nextDouble();
+        return XF;
     }
 
     public Polynom(int n) {

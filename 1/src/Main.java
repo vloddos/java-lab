@@ -6,16 +6,14 @@ public class Main {
     public static void main(String[] args) throws Exception {
         //add qr
 
-        int i, n;
-        Scanner s = new Scanner(new File("test.txt"));//.useDelimiter("[\\s,]*");
-
-        n = s.nextInt();
-        double[] X = new double[n + 1];
-        double[] F = new double[n + 1];
-
-        Polynom.getData(s, X, F);
+        double[] X, F;
+        double[][] XF = Polynom.getData(new File("test.txt"));
+        X = XF[0];
+        F = XF[1];
         Approx a1 = new Approx(X, F, 15, "LU");
         System.out.println(Arrays.toString(a1.a));
+        for (int i = 0; i <= a1.n; ++i)
+            System.out.println(F[i] - a1.getValue(X[i]));
     }
 }
 
@@ -141,14 +139,17 @@ class Polynom {
     public int n;//polynom pow
     public double a[];//a.length=n+1
 
-    public static void getData(Scanner s, double[] X, double[] F) {
-        int i;
-
-        for (i = 0; i < X.length; ++i)
-            X[i] = Double.parseDouble(s.next());
-
-        for (i = 0; i < X.length; ++i)
-            F[i] = Double.parseDouble(s.next());
+    public static double[][] getData(File file) throws Exception {
+        Scanner s = new Scanner(file);
+        s.useDelimiter("\\s+");
+        s.useLocale(Locale.ENGLISH);
+        int i, n = s.nextInt();
+        double[][] XF = new double[][]{new double[n + 1], new double[n + 1]};
+        for (i = 0; i <= n; ++i)
+            XF[0][i] = s.nextDouble();
+        for (i = 0; i <= n; ++i)
+            XF[1][i] = s.nextDouble();
+        return XF;
     }
 
     public Polynom(int n) {
@@ -165,6 +166,8 @@ class Polynom {
 
 class Interp extends Polynom {
 
+    public Solver s;
+
     public Interp(double[] X, double[] F, String method) throws Exception {
         super(X.length - 1);
 
@@ -174,18 +177,21 @@ class Interp extends Polynom {
             for (j = 0; j <= this.n; ++j)
                 A[i][j] = Math.pow(X[i], j);
 
-        Solver s = new Solver(A, method);
-        this.a = s.getSolve(F);
+        this.s = new Solver(A, method);
+        this.a = this.s.getSolve(F);
     }
 }
 
 class Approx extends Polynom {
 
+    public Solver s;
+    public double[] b;
+
     public Approx(double[] X, double[] F, int m, String method) throws Exception {
         super(m);
 
         int i, j, k;
-        double[] b = new double[m + 1];
+        this.b = new double[m + 1];
         double[][] A = new double[m + 1][m + 1];
 
         for (i = 0; i <= m; ++i)
@@ -195,9 +201,9 @@ class Approx extends Polynom {
 
         for (i = 0; i <= m; ++i)
             for (k = 0; k < X.length; ++k)
-                b[i] += F[k] * Math.pow(X[k], i);
+                this.b[i] += F[k] * Math.pow(X[k], i);
 
-        Solver s = new Solver(A, method);
-        this.a = s.getSolve(b);
+        this.s = new Solver(A, method);
+        this.a = this.s.getSolve(this.b);
     }
 }
