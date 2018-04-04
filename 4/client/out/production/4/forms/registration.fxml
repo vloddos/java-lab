@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="client.Controller"
+      prefHeight="400.0" prefWidth="600.0">
+    <HBox>
+        <Label text="Login"/>
+        <TextField fx:id="rflogin"/>
+    </HBox>
+    <HBox>
+        <Label text="Password"/>
+        <PasswordField fx:id="rfpw"/>
+    </HBox>
+    <HBox>
+        <Label text="Name"/>
+        <TextField fx:id="rfname"/>
+    </HBox>
+    <HBox>
+        <Label text="Surname"/>
+        <TextField fx:id="rfsurname"/>
+    </HBox>
+    <Button fx:id="rbreg" text="Register" onAction="#register"/>
+
+</VBox>
