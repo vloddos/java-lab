@@ -1,38 +1,22 @@
 package client;
 
-import common.Query;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
+import common.*;
 
-import client.Model;
+import javafx.event.ActionEvent;
+import javafx.scene.control.TextField;
 
 public class Controller {
-
-    public Button lblogin;
-    public Button lbreg;
-    public Button rbreg;
 
     public TextField rflogin;
     public TextField rfpw;
     public TextField rfname;
     public TextField rfsurname;
 
-    public void openRegisterWindow(ActionEvent event) throws Exception {
-        Stage rstage = new Stage();
-        rstage.initOwner(Model.INSTANCE.stage);
-        rstage.initModality(Modality.WINDOW_MODAL);
-        rstage.setTitle("Registration");
-        rstage.setScene(new Scene(Model.INSTANCE.child, 300, 275));
-        rstage.show();
+    public void openRegisterWindow(ActionEvent event) {
+        View.INSTANCE.registration_stage.show();
     }
 
-    public void register(ActionEvent event) {
+    public void register(ActionEvent event) throws Exception {
         Query query = new Query(
                 Query.Type.REGISTRATION,
                 rflogin.getText(),
@@ -40,5 +24,6 @@ public class Controller {
                 rfname.getText(),
                 rfsurname.getText()
         );
+        Client.request(query);
     }
 }

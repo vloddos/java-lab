@@ -1,39 +1,19 @@
 package client;
 
-import common.Query;
+import common.*;
 
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
 import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.util.*;
-import java.net.*;
+import java.io.ObjectOutputStream;
+import java.net.Socket;
 
-//Пример реализации клиента, отправляющего запросы на сервер:
 public class Client {
 
-	public static void main(String[] args) throws IOException {
-		System.out.println("User ID: ");
-		int uid = Integer.parseInt(System.console().readLine());
-		while (true) {
-			String str = System.console().readLine();
-			//В данном конкретном случае, для отправки каждого запроса на сервер создается новое подключение:
-			try (Socket soc = new Socket("localhost", 9027)) {
-				try (
-					ObjectOutputStream out = new ObjectOutputStream(soc.getOutputStream());
-					ObjectInputStream src = new ObjectInputStream(soc.getInputStream())
-				) {
-					//out.writeObject(new Query(uid, str));	//Отправляем запрос на сервер;
-					Query inf = (Query) src.readObject();	//Получаем ответ;
-					//System.out.println(inf.text);
-				}
-			}
-			catch (Exception err) {
-				System.out.println("ERROR: " + err);
-				break;
-			}
-		}
-	}
-
+    public static void request(Query query) throws Exception {
+        Socket socket = new Socket("localhost", 9027);
+        ObjectInputStream in = new ObjectInputStream(socket.getInputStream());
+        ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
+        out.writeObject(query);
+        Answer answer = (Answer) in.readObject();
+        View.INSTANCE.parseAnswer(query.type, answer);
+    }
 }

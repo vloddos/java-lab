@@ -1,80 +1,66 @@
 package server;
 
-import common.Query;
+import common.*;
 
 import java.sql.*;
 import java.io.*;
 import java.util.*;
 import java.net.*;
 
-//Пример реализации однопоточного сервера (способен поддерживать не более одного соединения):
 public class Server {
 
-    private Socket soc;
+    private Socket socket;
     private static TreeMap<Long, Integer> session_id = new TreeMap<>();
 
     private static final String url = "jdbc:mysql://localhost:3306";
     private static final String user = "root";
     private static final String password = "rootmysql";
 
-    // JDBC variables for opening and managing connection
     private static Connection con;
     private static Statement stmt;
     private static ResultSet rs;
 
     public static void main(String[] args) {
-
-        try {
-            con = DriverManager.getConnection(url, user, password);
-            //stmt = con.createStatement();
-        } catch (SQLException sqlEx) {
-            sqlEx.printStackTrace();
-        } finally {//try()???????
-            try {
-                con.close();
-            } catch (SQLException se) { /*can't do anything */ }
-        }
-
-        try (ServerSocket soc = new ServerSocket(9027)) {
-            //Слушаем порт:
-            while (true) {
-                new Server(soc.accept()).run();    //Создаем объект соединения и запускаем обработчик;
-            }
+        try (
+                ServerSocket socket = new ServerSocket(9027);
+                Connection con = DriverManager.getConnection(url, user, password)
+        ) {
+            Server.con = con;
+            System.out.println(Server.con);
+            System.out.println(socket);
+            while (true)
+                new Server(socket.accept()).run();
         } catch (Exception err) {
             System.out.println("ERROR: " + err);
         }
     }
 
-    public Server(Socket _soc) {
-        soc = _soc;
+    public Server(Socket socket) {
+        this.socket = socket;
     }
 
     public void run() {
         try (
-                ObjectOutputStream out = new ObjectOutputStream(soc.getOutputStream());
-                ObjectInputStream src = new ObjectInputStream(soc.getInputStream())
+                ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
+                ObjectInputStream src = new ObjectInputStream(socket.getInputStream())
         ) {
-            Query query = (Query) src.readObject();    //Читаем данные из сокета;
-
-            /*System.out.println(query.user + ": " + query.text);
-            query.text = "ANSWER: " + query.text;
-            out.writeObject(query);    //Пишем данные в сокет;*/
-        } catch (Exception err) {
-            //...
+            Query query = (Query) src.readObject();
+            Answer answer = parseQuery(query);
+            out.writeObject(answer);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
-    public void parseQuery(Query query) {
+    public Answer parseQuery(Query query) {
         try {
             switch (query.type) {
                 case REGISTRATION:
                     rs = con.createStatement().executeQuery(
                             "SELECT id FROM `bibliography`.`user` WHERE login = " + "'" + query.login + "'"
                     );
-                    if (rs.next()) {
-                        //...
-                        break;
-                    }
+                    if (rs.next())
+                        return new Answer(Answer.Status.ERROR,"This login is already taken");
                     con.createStatement().executeUpdate(
                             "INSERT INTO `bibliography`.`user` (`login`, `pw`, `name`, `surname`) VALUES (" +
                                     "'" + query.login + "'," +
@@ -83,15 +69,15 @@ public class Server {
                                     "'" + query.surname + "'" +
                                     ");"
                     );
-
-                    break;
+                    return new Answer(Answer.Status.OK,"Registration is successful");
                 case LOGIN:
-                    long session = new Random().nextLong();///???????
+                    //long session = new Random().nextLong();///???????
                     break;
 
             }
         } catch (SQLException sqlEx) {
             sqlEx.printStackTrace();
         }
+        return null;
     }
 }

@@ -15,19 +15,29 @@
       <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1596">
-              <caret line="76" column="14" lean-forward="true" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+            <state relative-caret-position="21">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1431#1432#0" expanded="true" />
-                <element signature="e#1457#1458#0" expanded="true" />
-                <marker date="1522228240668" expanded="true" signature="2230:2280" ph="SELECT id FR... user" />
-                <marker date="1522228240668" expanded="true" signature="2230:2307" ph="SELECT id FR... user" />
-                <marker date="1522228240668" expanded="true" signature="2538:2615" ph="INSERT INTO `bibliography`.`user`... " />
-                <marker date="1522228240668" expanded="true" signature="2538:2657" ph="INSERT INTO `bibliography`.`user`... " />
-                <marker date="1522228240668" expanded="true" signature="2538:2671" ph="INSERT INTO `bibliography`.`user`... " />
-                <marker date="1522228240668" expanded="true" signature="2538:2906" ph="INSERT INTO `bibliography`.`user`... " />
+                <element signature="e#1050#1051#0" expanded="true" />
+                <element signature="e#1086#1087#0" expanded="true" />
+                <marker date="1522947381114" expanded="true" signature="1752:1802" ph="SELECT id FR... user" />
+                <marker date="1522947381114" expanded="true" signature="1752:1829" ph="SELECT id FR... user" />
+                <marker date="1522947381114" expanded="true" signature="2069:2146" ph="INSERT INTO `bibliography`.`user`... " />
+                <marker date="1522947381114" expanded="true" signature="2069:2188" ph="INSERT INTO `bibliography`.`user`... " />
+                <marker date="1522947381114" expanded="true" signature="2069:2202" ph="INSERT INTO `bibliography`.`user`... " />
+                <marker date="1522947381114" expanded="true" signature="2069:2437" ph="INSERT INTO `bibliography`.`user`... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Answer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../common/src/common/Answer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,6 +70,7 @@
         <option value="$PROJECT_DIR$/../common/src/huy/Query.java" />
         <option value="$PROJECT_DIR$/src/server/Client.java" />
         <option value="$PROJECT_DIR$/../common/src/common/Query.java" />
+        <option value="$PROJECT_DIR$/../common/src/common/Answer.java" />
         <option value="$PROJECT_DIR$/src/server/Server.java" />
       </list>
     </option>
@@ -70,13 +81,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="width" value="960" />
     <option name="height" value="1032" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -89,27 +99,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -237,28 +227,32 @@
       <workItem from="1522141534899" duration="8030000" />
       <workItem from="1522223540916" duration="3635000" />
       <workItem from="1522842051782" duration="2476000" />
+      <workItem from="1522930083423" duration="7582000" />
+      <workItem from="1523084863694" duration="709000" />
+      <workItem from="1523095170372" duration="613000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23656000" />
+    <option name="totallyTimeSpent" value="32560000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="960" height="1032" extended-state="1" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33633295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15410574" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15260416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31104034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -270,7 +264,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -301,14 +294,66 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1431#1432#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
-            <marker date="1522228240668" expanded="true" signature="2230:2280" ph="SELECT id FR... user" />
-            <marker date="1522228240668" expanded="true" signature="2230:2307" ph="SELECT id FR... user" />
-            <marker date="1522228240668" expanded="true" signature="2538:2615" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2657" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2671" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2906" ph="INSERT INTO `bibliography`.`user`... " />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <marker date="1522947381114" expanded="true" signature="1752:1802" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="1752:1829" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="2069:2146" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2188" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2202" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2437" ph="INSERT INTO `bibliography`.`user`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common/src/common/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <marker date="1522947381114" expanded="true" signature="1752:1802" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="1752:1829" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="2069:2146" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2188" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2202" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2437" ph="INSERT INTO `bibliography`.`user`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common/src/common/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <marker date="1522947381114" expanded="true" signature="1752:1802" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="1752:1829" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="2069:2146" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2188" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2202" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2437" ph="INSERT INTO `bibliography`.`user`... " />
           </folding>
         </state>
       </provider>
@@ -319,14 +364,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1431#1432#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
-            <marker date="1522228240668" expanded="true" signature="2230:2280" ph="SELECT id FR... user" />
-            <marker date="1522228240668" expanded="true" signature="2230:2307" ph="SELECT id FR... user" />
-            <marker date="1522228240668" expanded="true" signature="2538:2615" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2657" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2671" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2906" ph="INSERT INTO `bibliography`.`user`... " />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <marker date="1522947381114" expanded="true" signature="1752:1802" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="1752:1829" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="2069:2146" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2188" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2202" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2437" ph="INSERT INTO `bibliography`.`user`... " />
           </folding>
         </state>
       </provider>
@@ -337,14 +382,32 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1431#1432#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
-            <marker date="1522228240668" expanded="true" signature="2230:2280" ph="SELECT id FR... user" />
-            <marker date="1522228240668" expanded="true" signature="2230:2307" ph="SELECT id FR... user" />
-            <marker date="1522228240668" expanded="true" signature="2538:2615" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2657" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2671" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2906" ph="INSERT INTO `bibliography`.`user`... " />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <marker date="1522947381114" expanded="true" signature="1752:1802" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="1752:1829" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="2069:2146" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2188" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2202" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2437" ph="INSERT INTO `bibliography`.`user`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <marker date="1522947381114" expanded="true" signature="1752:1802" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="1752:1829" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="2069:2146" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2188" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2202" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2437" ph="INSERT INTO `bibliography`.`user`... " />
           </folding>
         </state>
       </provider>
@@ -356,14 +419,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1431#1432#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
-            <marker date="1522228240668" expanded="true" signature="2230:2280" ph="SELECT id FR... user" />
-            <marker date="1522228240668" expanded="true" signature="2230:2307" ph="SELECT id FR... user" />
-            <marker date="1522228240668" expanded="true" signature="2538:2615" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2657" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2671" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2906" ph="INSERT INTO `bibliography`.`user`... " />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <marker date="1522947381114" expanded="true" signature="1752:1802" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="1752:1829" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="2069:2146" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2188" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2202" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2437" ph="INSERT INTO `bibliography`.`user`... " />
           </folding>
         </state>
       </provider>
@@ -405,20 +468,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/Client.java" />
+    <entry file="file://$PROJECT_DIR$/../common/src/common/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="76" column="14" lean-forward="true" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1431#1432#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
-            <marker date="1522228240668" expanded="true" signature="2230:2280" ph="SELECT id FR... user" />
-            <marker date="1522228240668" expanded="true" signature="2230:2307" ph="SELECT id FR... user" />
-            <marker date="1522228240668" expanded="true" signature="2538:2615" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2657" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2671" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1522228240668" expanded="true" signature="2538:2906" ph="INSERT INTO `bibliography`.`user`... " />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <marker date="1522947381114" expanded="true" signature="1752:1802" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="1752:1829" ph="SELECT id FR... user" />
+            <marker date="1522947381114" expanded="true" signature="2069:2146" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2188" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2202" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1522947381114" expanded="true" signature="2069:2437" ph="INSERT INTO `bibliography`.`user`... " />
           </folding>
         </state>
       </provider>

@@ -10,4 +10,10 @@ public class Answer implements Serializable {
     }
 
     public Status status;
+    public String message;
+
+    public Answer(Status status, String message) {
+        this.status = status;
+        this.message = message;
+    }
 }
