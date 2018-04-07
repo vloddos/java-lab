@@ -24,7 +24,6 @@ public class Query implements Serializable {
         UPDATE
     }
 
-    //type???
     //REGISTRATION
     public Query(Type type, String login, String pw, String name, String surname) {
         this.type = type;
@@ -45,10 +44,4 @@ public class Query implements Serializable {
     /*public Query(Type type,long session, String table,){
 
     }*/
-
-
-    public static void main() {
-        System.out.println("test1488");
-
-    }
 }

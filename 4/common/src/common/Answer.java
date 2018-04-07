@@ -12,8 +12,16 @@ public class Answer implements Serializable {
     public Status status;
     public String message;
 
+    public long session;
+
     public Answer(Status status, String message) {
         this.status = status;
         this.message = message;
+    }
+
+    public Answer(Status status, String message, long session) {
+        this.status = status;
+        this.message = message;
+        this.session = session;
     }
 }

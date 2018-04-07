@@ -8,6 +8,8 @@ import java.net.Socket;
 
 public class Client {
 
+    public static long session;
+
     public static void request(Query query) throws Exception {
         Socket socket = new Socket("localhost", 9027);
         ObjectInputStream in = new ObjectInputStream(socket.getInputStream());

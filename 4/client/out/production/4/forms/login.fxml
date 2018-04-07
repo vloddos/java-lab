@@ -3,7 +3,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<?import javafx.scene.text.Text?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="client.Controller"
@@ -18,8 +17,9 @@
         <PasswordField fx:id="lfpw"/>
     </HBox>
     <HBox>
-        <Button fx:id="lblogin" text="Login"/>
+        <Button fx:id="lblogin" text="Login" onAction="#login"/>
         <Button fx:id="lbreg" text="Registration" onAction="#openRegisterWindow"/>
     </HBox>
+    <Button text="1" onAction="#test"/>
 
 </VBox>
