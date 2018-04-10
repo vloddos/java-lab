@@ -1,5 +1,6 @@
 package server;
 
+import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException;
 import common.*;
 
 import java.sql.*;
@@ -58,9 +59,7 @@ public class Server {
         try {
             switch (query.type) {
                 case REGISTRATION:
-                    rs = stmt.executeQuery(
-                            "SELECT id FROM `bibliography`.`user` WHERE login = " + "'" + query.login + "'"
-                    );
+                    rs = stmt.executeQuery("SELECT id FROM `bibliography`.`user` WHERE login = " + "'" + query.login + "'");
                     if (rs.next())
                         return new Answer(Answer.Status.ERROR, "This login is already taken");
                     stmt.executeUpdate(
@@ -73,15 +72,34 @@ public class Server {
                     );
                     return new Answer(Answer.Status.OK, "Registration is successful");
                 case LOGIN:
-                    rs = stmt.executeQuery(
-                            "SELECT * FROM `bibliography`.`user` WHERE login = " + "'" + query.login + "'"
-                    );
+                    rs = stmt.executeQuery("SELECT * FROM `bibliography`.`user` WHERE login = " + "'" + query.login + "'");
                     if (rs.next())
-                        if (query.pw.equals(rs.getString("pw")))
-                            return new Answer(Answer.Status.OK, "", new Random().nextLong());
-                        else
-                            return new Answer(Answer.Status.ERROR, "Wrong password");
+                        if (query.pw.equals(rs.getString("pw"))) {
+                            long session = new Random().nextLong();
+                            session_id.put(session, rs.getInt("id"));
+                            System.out.println("session " + session + " open");
+                            return new Answer(Answer.Status.OK, "", session, Role.values()[rs.getInt("role")]);
+                        } else return new Answer(Answer.Status.ERROR, "Wrong password");
                     return new Answer(Answer.Status.ERROR, "Non-existent login");
+                case SESSION_CLOSE:
+                    session_id.remove(query.session);
+                    System.out.println("session " + query.session + " closed");
+                    return new Answer(Answer.Status.OK, "The session is closed");
+                case REQUEST_AUTHORSHIP:
+                    try {
+                        stmt.executeUpdate(
+                                "INSERT INTO `bibliography`.`request_authorship` (`user_id`) VALUES ('" +
+                                        session_id.get(query.session) + "');"
+                        );
+                    } catch (MySQLIntegrityConstraintViolationException e) {
+                        return new Answer(Answer.Status.ERROR, "You have already requested authorship");
+                    }
+                    return new Answer(Answer.Status.OK, "Your request accepted");
+                case SELECT:
+                    //rs = stmt.executeQuery("SELECT * FROM `bibliography`.`" + query.table + "`");
+                    break;
+
+
             }
         } catch (SQLException sqlEx) {
             sqlEx.printStackTrace();

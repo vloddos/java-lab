@@ -3,23 +3,22 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml"
-      fx:controller="client.Controller"
-      prefHeight="400.0" prefWidth="600.0">
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="client.Controller"
+          prefHeight="150.0" prefWidth="300.0"
+          alignment="CENTER" hgap="5" vgap="5">
 
-    <HBox>
-        <Label text="Login"/>
-        <TextField fx:id="lflogin"/>
-    </HBox>
-    <HBox>
-        <Label text="Password"/>
-        <PasswordField fx:id="lfpw"/>
-    </HBox>
-    <HBox>
-        <Button fx:id="lblogin" text="Login" onAction="#login"/>
-        <Button fx:id="lbreg" text="Registration" onAction="#openRegisterWindow"/>
-    </HBox>
-    <Button text="1" onAction="#test"/>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Login"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="lflogin"/>
 
-</VBox>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="Password"/>
+    <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="lfpw"/>
+
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="2"
+            fx:id="lblogin" text="Login" onAction="#login"/>
+
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="3"
+            fx:id="lbreg" text="Registration" onAction="#openRegisterWindow"/>
+
+</GridPane>

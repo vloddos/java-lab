@@ -3,27 +3,25 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml"
-      fx:controller="client.Controller"
-      prefHeight="400.0" prefWidth="600.0">
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="client.Controller"
+          prefHeight="200.0" prefWidth="300.0"
+          alignment="CENTER" hgap="5" vgap="5">
 
-    <HBox>
-        <Label text="Login"/>
-        <TextField fx:id="rflogin"/>
-    </HBox>
-    <HBox>
-        <Label text="Password"/>
-        <PasswordField fx:id="rfpw"/>
-    </HBox>
-    <HBox>
-        <Label text="Name"/>
-        <TextField fx:id="rfname"/>
-    </HBox>
-    <HBox>
-        <Label text="Surname"/>
-        <TextField fx:id="rfsurname"/>
-    </HBox>
-    <Button fx:id="rbreg" text="Register" onAction="#register"/>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Login"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="rflogin"/>
 
-</VBox>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="Password"/>
+    <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="rfpw"/>
+
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="Name"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="rfname"/>
+
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="3" text="Surname"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="rfsurname"/>
+
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="4"
+            fx:id="rbreg" text="Register" onAction="#register"/>
+
+</GridPane>

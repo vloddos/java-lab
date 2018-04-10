@@ -3,10 +3,10 @@ package client;
 import common.*;
 
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -20,17 +20,22 @@ public class View {
     public Stage registration_stage = new Stage();
     public Stage registration_status_stage = new Stage();
     public Stage main_stage = new Stage();
+    public Stage request_authorship_status_stage = new Stage();
 
     public Parent login_form;
-    public VBox login_status_root = getStatusWindow();
+    public StackPane login_status_root = getStatusWindow();
     public Parent registration_form;
-    public VBox registration_status_root = getStatusWindow();
+    public StackPane registration_status_root = getStatusWindow();
     public Parent main_form;
+    public StackPane request_authorship_status_root = getStatusWindow();
 
-    public VBox getStatusWindow() {
-        VBox vBox = new VBox();
-        vBox.getChildren().addAll(new Text(), new Button("OK"));
-        return vBox;
+    public StackPane getStatusWindow() {
+        StackPane stackPane = new StackPane();
+        stackPane.setPrefSize(150, 50);
+        Text text = new Text();
+        StackPane.setAlignment(text, Pos.CENTER);
+        stackPane.getChildren().add(text);
+        return stackPane;
     }
 
     private View() {
@@ -43,56 +48,59 @@ public class View {
         }
 
         login_stage.setTitle("Login");
-        login_stage.setScene(new Scene(login_form, 300, 275));
+        login_stage.setScene(new Scene(login_form));
 
         login_status_stage.initOwner(login_stage);
         login_status_stage.initModality(Modality.WINDOW_MODAL);
-        login_status_stage.setScene(new Scene(login_status_root, 300, 275));
+        login_status_stage.setScene(new Scene(login_status_root));
 
         registration_stage.initOwner(login_stage);
         registration_stage.initModality(Modality.WINDOW_MODAL);
         registration_stage.setTitle("Registration");
-        registration_stage.setScene(new Scene(registration_form, 300, 275));
+        registration_stage.setScene(new Scene(registration_form));
 
         registration_status_stage.initOwner(registration_stage);
         registration_status_stage.initModality(Modality.WINDOW_MODAL);
-        registration_status_stage.setScene(new Scene(registration_status_root, 300, 275));
+        registration_status_stage.setScene(new Scene(registration_status_root));
 
         main_stage.setTitle("Main");
-        main_stage.setScene(new Scene(main_form, 500, 500));
+        main_stage.setOnCloseRequest(e -> Client.request(new Query(Query.Type.SESSION_CLOSE, Client.session)));
+        main_stage.setScene(new Scene(main_form));
+
+        request_authorship_status_stage.initOwner(main_stage);
+        request_authorship_status_stage.initModality(Modality.WINDOW_MODAL);
+        request_authorship_status_stage.setScene(new Scene(request_authorship_status_root));
     }
 
     public void parseAnswer(Query.Type type, Answer answer) {
         // TODO: 08.04.2018
-        // mainform in code???
-        // settitle???
-        // session in server
-        // exit and login again
-        // frozen buttons if not enough permissions
+        // frozen buttons if not enough permissions???
         switch (type) {
             case REGISTRATION:
-                ((Button) registration_status_root.getChildren().get(1)).setOnAction(
-                        answer.status == Answer.Status.OK ?
-                                e -> {
-                                    registration_status_stage.close();
-                                    registration_stage.close();
-                                } :
-                                event -> registration_status_stage.close()
-                );
+                if (answer.status == Answer.Status.OK)//nuzhno voobshe???
+                    registration_status_stage.setOnCloseRequest(e -> registration_stage.close());
                 ((Text) registration_status_root.getChildren().get(0)).setText(answer.message);
                 registration_status_stage.show();
                 break;
             case LOGIN:
                 if (answer.status == Answer.Status.OK) {
                     Client.session = answer.session;
+                    Client.role = answer.role;
+                    System.out.println(Client.role);//debug
                     login_stage.close();
                     main_stage.show();
                 } else {
-                    ((Button) login_status_root.getChildren().get(1)).setOnAction(e -> login_status_stage.close());
                     ((Text) login_status_root.getChildren().get(0)).setText(answer.message);
                     login_status_stage.show();
                 }
                 break;
+            case SESSION_CLOSE:
+                //System.out.println(answer.message);
+                break;
+            case REQUEST_AUTHORSHIP:
+                ((Text) request_authorship_status_root.getChildren().get(0)).setText(answer.message);
+                request_authorship_status_stage.show();
+
         }
     }
 }

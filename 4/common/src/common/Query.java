@@ -21,7 +21,9 @@ public class Query implements Serializable {
         SELECT,
         DELETE,
         INSERT,
-        UPDATE
+        UPDATE,
+        SESSION_CLOSE,
+        REQUEST_AUTHORSHIP
     }
 
     //REGISTRATION
@@ -41,7 +43,16 @@ public class Query implements Serializable {
     }
 
     //SELECT
-    /*public Query(Type type,long session, String table,){
+    public Query(Type type, long session, String table) {
+        this.type = type;
+        this.session = session;
+        this.table = table;
+    }
 
-    }*/
+    //SESSION_CLOSE, REQUEST_AUTHORSHIP
+    public Query(Type type, long session) {
+        this.type = type;
+        this.session = session;
+    }
+
 }
