@@ -6,6 +6,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
@@ -65,6 +67,8 @@ public class View {
 
         main_stage.setTitle("Main");
         main_stage.setOnCloseRequest(e -> Client.request(new Query(Query.Type.SESSION_CLOSE, Client.session)));
+        main_stage.setMinWidth(800);
+        main_stage.setMaxWidth(800);
         main_stage.setScene(new Scene(main_form));
 
         request_authorship_status_stage.initOwner(main_stage);
@@ -86,7 +90,8 @@ public class View {
                 if (answer.status == Answer.Status.OK) {
                     Client.session = answer.session;
                     Client.role = answer.role;
-                    System.out.println(Client.role);//debug
+                    //System.out.println(Client.role);//debug
+                    ((Label)((GridPane)main_form).getChildren().get(2)).setText(answer.role.toString());
                     login_stage.close();
                     main_stage.show();
                 } else {

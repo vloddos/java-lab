@@ -1,80 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.String?>
-<?import javafx.collections.FXCollections?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<GridPane hgap="5" vgap="5"
-          prefHeight="400.0" prefWidth="600.0"
-          xmlns="http://javafx.com/javafx"
-          xmlns:fx="http://javafx.com/fxml"
+<!--<Label fx:id="lrole" GridPane.columnIndex="6" GridPane.rowIndex="1"/>-->
+<?import javafx.scene.control.Label?>
+<GridPane hgap="5" vgap="5" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
           fx:controller="client.Controller">
 
-    <TableView fx:id="result_table" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="0"
-               GridPane.rowSpan="3"/>
+    <TableView fx:id="result_table" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="1"
+               GridPane.rowSpan="3"
+               minWidth="600" maxWidth="600"/>
 
-    <Button fx:id="bexit" onAction="#exit" text="exit" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+    <VBox spacing="5" GridPane.columnIndex="7" GridPane.rowIndex="1">
+        <Button fx:id="bexit" onAction="#exit" text="exit"/>
+        <Button fx:id="bauthor" onAction="#requestAuthorship" text="request authorship"/>
 
-    <Button fx:id="bauthor" text="request authorship" GridPane.columnIndex="3" GridPane.rowIndex="1"
-            onAction="#request_authorship"/>
+        <HBox spacing="5">
+            <Button fx:id="binsert" text="+"/>
+            <Button fx:id="bdelete" text="-"/>
+            <Button fx:id="bupdate" text="change"/>
+        </HBox>
+    </VBox>
 
-    <FlowPane GridPane.columnIndex="3" GridPane.rowIndex="2" hgap="5">
-        <Button fx:id="binsert" text="+"/>
+    <Label fx:id="lrole" GridPane.columnIndex="7" GridPane.rowIndex="2"/>
 
-        <Button fx:id="bdelete" text="-"/>
+    <Button text="request" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <fx:define>
+        <ToggleGroup fx:id="request_group"/>
+    </fx:define>
+    <RadioButton text="select" GridPane.columnIndex="2" GridPane.rowIndex="4" toggleGroup="$request_group"/>
+    <RadioButton text="delete" GridPane.columnIndex="3" GridPane.rowIndex="4" toggleGroup="$request_group"/>
+    <RadioButton text="update" GridPane.columnIndex="4" GridPane.rowIndex="4" toggleGroup="$request_group"/>
 
-        <Button fx:id="bupdate" text="change"/>
+    <Button onAction="#addOrCondition" text="OR" GridPane.columnIndex="5" GridPane.rowIndex="4"/>
+    <Button text="AND/OR" GridPane.columnIndex="6" GridPane.rowIndex="4"/>
 
-        <Button fx:id="bselect" text="find"/>
-    </FlowPane>
-
-    <Label text="Table" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
-    <ComboBox fx:id="cbtable" GridPane.columnIndex="1" GridPane.rowIndex="3">
-        <items>
-            <FXCollections fx:factory="observableArrayList">
-                <String fx:value="author"/>
-                <String fx:value="author_organization"/>
-                <String fx:value="journal"/>
-                <String fx:value="keyword"/>
-                <String fx:value="organization"/>
-                <String fx:value="publication"/>
-                <String fx:value="publication_author"/>
-                <String fx:value="publication_keyword"/>
-                <String fx:value="publication_redactor"/>
-                <String fx:value="user"/>
-                <String fx:value="request_authorship"/>
-            </FXCollections>
-        </items>
-    </ComboBox>
-
-    <GridPane fx:id="fpconds" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="3"
-              hgap="5" vgap="5">
-        <Label text="Field" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
-        <ComboBox fx:id="cbfield" GridPane.columnIndex="0" GridPane.rowIndex="1"></ComboBox>
-
-        <Label text="Relation" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
-        <ComboBox fx:id="cbrelation" GridPane.columnIndex="1" GridPane.rowIndex="1">
-            <items>
-                <FXCollections fx:factory="observableArrayList">
-                    <String fx:value="lt"/>
-                    <String fx:value="gt"/>
-                    <String fx:value="le"/>
-                    <String fx:value="ge"/>
-                    <String fx:value="eq"/>
-                    <String fx:value="ne"/>
-                </FXCollections>
-            </items>
-        </ComboBox>
-
-        <Label text="Value" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
-        <ComboBox fx:id="cbvalue" editable="true" GridPane.columnIndex="2" GridPane.rowIndex="1"></ComboBox>
-
-        <Button fx:id="baddcond" text="+" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
-        <Button text="-" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
-    </GridPane>
+    <ScrollPane hbarPolicy="ALWAYS" maxHeight="300"
+                minWidth="600" maxWidth="600"
+                vbarPolicy="ALWAYS" GridPane.columnIndex="1"
+                GridPane.columnSpan="6" GridPane.rowIndex="5">
+        <HBox fx:id="hconds"/>
+    </ScrollPane>
 </GridPane>

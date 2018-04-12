@@ -15,19 +15,19 @@
       <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1995">
-              <caret line="95" column="21" lean-forward="true" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
+            <state relative-caret-position="1827">
+              <caret line="87" column="69" lean-forward="true" selection-start-line="87" selection-start-column="69" selection-end-line="87" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1221#1222#0" expanded="true" />
                 <element signature="e#1257#1258#0" expanded="true" />
-                <marker date="1523370374248" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
-                <marker date="1523370374248" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
-                <marker date="1523370374248" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
-                <marker date="1523370374248" expanded="true" signature="3789:3858" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-                <marker date="1523370374248" expanded="true" signature="3789:3937" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-                <marker date="1523370374248" expanded="true" signature="3789:3965" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-                <marker date="1523370374248" expanded="true" signature="4328:4378" ph="SELECT * FRO... missingValue" />
+                <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+                <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+                <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+                <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+                <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+                <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+                <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
               </folding>
             </state>
           </provider>
@@ -79,7 +79,7 @@
     <option name="height" value="1032" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -92,34 +92,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -255,11 +228,16 @@
       <workItem from="1523245287592" duration="4326000" />
       <workItem from="1523252420460" duration="308000" />
       <workItem from="1523347818161" duration="12269000" />
+      <workItem from="1523417066007" duration="214000" />
+      <workItem from="1523448146261" duration="1276000" />
+      <workItem from="1523492252525" duration="2954000" />
+      <workItem from="1523498767359" duration="1189000" />
+      <workItem from="1523521936124" duration="1292000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56890000" />
+    <option name="totallyTimeSpent" value="63815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -273,7 +251,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20176406" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12127894" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -309,19 +287,114 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1407">
           <caret line="74" column="22" lean-forward="true" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1221#1222#0" expanded="true" />
             <element signature="e#1257#1258#0" expanded="true" />
-            <marker date="1523370374248" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
-            <marker date="1523370374248" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1523370374248" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
-            <marker date="1523370374248" expanded="true" signature="3789:3858" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3937" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3965" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="4328:4378" ph="SELECT * FRO... missingValue" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
           </folding>
         </state>
       </provider>
@@ -330,9 +403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -352,13 +422,13 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1221#1222#0" expanded="true" />
             <element signature="e#1257#1258#0" expanded="true" />
-            <marker date="1523370374248" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
-            <marker date="1523370374248" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1523370374248" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
-            <marker date="1523370374248" expanded="true" signature="3789:3858" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3937" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3965" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="4328:4378" ph="SELECT * FRO... missingValue" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
           </folding>
         </state>
       </provider>
@@ -375,9 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -389,13 +456,13 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1221#1222#0" expanded="true" />
             <element signature="e#1257#1258#0" expanded="true" />
-            <marker date="1523370374248" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
-            <marker date="1523370374248" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1523370374248" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
-            <marker date="1523370374248" expanded="true" signature="3789:3858" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3937" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3965" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="4328:4378" ph="SELECT * FRO... missingValue" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
           </folding>
         </state>
       </provider>
@@ -412,9 +479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -426,13 +490,13 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1221#1222#0" expanded="true" />
             <element signature="e#1257#1258#0" expanded="true" />
-            <marker date="1523370374248" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
-            <marker date="1523370374248" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1523370374248" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
-            <marker date="1523370374248" expanded="true" signature="3789:3858" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3937" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3965" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="4328:4378" ph="SELECT * FRO... missingValue" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
           </folding>
         </state>
       </provider>
@@ -449,9 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -463,13 +524,13 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1221#1222#0" expanded="true" />
             <element signature="e#1257#1258#0" expanded="true" />
-            <marker date="1523370374248" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
-            <marker date="1523370374248" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1523370374248" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
-            <marker date="1523370374248" expanded="true" signature="3789:3858" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3937" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3965" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="4328:4378" ph="SELECT * FRO... missingValue" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
           </folding>
         </state>
       </provider>
@@ -486,9 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -500,13 +558,13 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1221#1222#0" expanded="true" />
             <element signature="e#1257#1258#0" expanded="true" />
-            <marker date="1523370374248" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
-            <marker date="1523370374248" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1523370374248" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
-            <marker date="1523370374248" expanded="true" signature="3789:3858" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3937" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3965" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="4328:4378" ph="SELECT * FRO... missingValue" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
           </folding>
         </state>
       </provider>
@@ -515,9 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -529,13 +584,13 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1221#1222#0" expanded="true" />
             <element signature="e#1257#1258#0" expanded="true" />
-            <marker date="1523370374248" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
-            <marker date="1523370374248" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1523370374248" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
-            <marker date="1523370374248" expanded="true" signature="3789:3858" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3937" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3965" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="4328:4378" ph="SELECT * FRO... missingValue" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
           </folding>
         </state>
       </provider>
@@ -544,8 +599,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
           </folding>
         </state>
       </provider>
@@ -558,13 +629,13 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1221#1222#0" expanded="true" />
             <element signature="e#1257#1258#0" expanded="true" />
-            <marker date="1523370374248" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
-            <marker date="1523370374248" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1523370374248" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
-            <marker date="1523370374248" expanded="true" signature="3789:3858" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3937" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3965" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="4328:4378" ph="SELECT * FRO... missingValue" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
           </folding>
         </state>
       </provider>
@@ -577,13 +648,13 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1221#1222#0" expanded="true" />
             <element signature="e#1257#1258#0" expanded="true" />
-            <marker date="1523370374248" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
-            <marker date="1523370374248" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1523370374248" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
-            <marker date="1523370374248" expanded="true" signature="3789:3858" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3937" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3965" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="4328:4378" ph="SELECT * FRO... missingValue" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
           </folding>
         </state>
       </provider>
@@ -596,32 +667,13 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1221#1222#0" expanded="true" />
             <element signature="e#1257#1258#0" expanded="true" />
-            <marker date="1523370374248" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
-            <marker date="1523370374248" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1523370374248" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
-            <marker date="1523370374248" expanded="true" signature="3789:3858" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3937" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3965" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="4328:4378" ph="SELECT * FRO... missingValue" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-            <marker date="1523370374248" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
-            <marker date="1523370374248" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1523370374248" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
-            <marker date="1523370374248" expanded="true" signature="3789:3858" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3937" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3965" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="4328:4378" ph="SELECT * FRO... missingValue" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
           </folding>
         </state>
       </provider>
@@ -635,13 +687,13 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1221#1222#0" expanded="true" />
             <element signature="e#1257#1258#0" expanded="true" />
-            <marker date="1523370374248" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
-            <marker date="1523370374248" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1523370374248" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
-            <marker date="1523370374248" expanded="true" signature="3789:3858" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3937" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3965" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="4328:4378" ph="SELECT * FRO... missingValue" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
           </folding>
         </state>
       </provider>
@@ -676,7 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -692,27 +743,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
           <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1995">
-          <caret line="95" column="21" lean-forward="true" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
+        <state relative-caret-position="1827">
+          <caret line="87" column="69" lean-forward="true" selection-start-line="87" selection-start-column="69" selection-end-line="87" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1221#1222#0" expanded="true" />
             <element signature="e#1257#1258#0" expanded="true" />
-            <marker date="1523370374248" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
-            <marker date="1523370374248" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
-            <marker date="1523370374248" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
-            <marker date="1523370374248" expanded="true" signature="3789:3858" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3937" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="3789:3965" ph="INSERT INTO `bibliography`.`request_authorship`... " />
-            <marker date="1523370374248" expanded="true" signature="4328:4378" ph="SELECT * FRO... missingValue" />
+            <marker date="1523548169415" expanded="true" signature="1877:1954" ph="SELECT id FR... user" />
+            <marker date="1523548169415" expanded="true" signature="2157:2525" ph="INSERT INTO `bibliography`.`user`... " />
+            <marker date="1523548169415" expanded="true" signature="2710:2786" ph="SELECT * FRO... user" />
+            <marker date="1523548169415" expanded="true" signature="3818:3887" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3966" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="3818:3994" ph="INSERT INTO `bibliography`.`request_authorship`... " />
+            <marker date="1523548169415" expanded="true" signature="4357:4407" ph="SELECT * FRO... missingValue" />
           </folding>
         </state>
       </provider>

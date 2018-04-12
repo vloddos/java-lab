@@ -8,6 +8,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) {
         View.INSTANCE.login_stage.show();
+        //View.INSTANCE.main_stage.show();
     }
 
     public static void main(String[] args) {

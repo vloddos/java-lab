@@ -85,7 +85,7 @@ public class Server {
                     session_id.remove(query.session);
                     System.out.println("session " + query.session + " closed");
                     return new Answer(Answer.Status.OK, "The session is closed");
-                case REQUEST_AUTHORSHIP:
+                case REQUEST_AUTHORSHIP://executeQuery if rs.next ???
                     try {
                         stmt.executeUpdate(
                                 "INSERT INTO `bibliography`.`request_authorship` (`user_id`) VALUES ('" +
