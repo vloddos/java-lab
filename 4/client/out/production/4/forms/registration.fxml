@@ -5,23 +5,22 @@
 
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
-          fx:controller="client.Controller"
+          fx:controller="controllers.RegistrationController"
           prefHeight="200.0" prefWidth="300.0"
           alignment="CENTER" hgap="5" vgap="5">
 
     <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Login"/>
-    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="rflogin"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="login"/>
 
     <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="Password"/>
-    <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="rfpw"/>
+    <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="pw"/>
 
     <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="Name"/>
-    <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="rfname"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="name"/>
 
     <Label GridPane.columnIndex="0" GridPane.rowIndex="3" text="Surname"/>
-    <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="rfsurname"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="surname"/>
 
-    <Button GridPane.columnIndex="0" GridPane.rowIndex="4"
-            fx:id="rbreg" text="Register" onAction="#register"/>
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="4" text="Register" onAction="#register"/>
 
 </GridPane>

@@ -4,16 +4,18 @@ import java.io.Serializable;
 
 public class Query implements Serializable {
 
-    //reg
     public String login;
     public String pw;
     public String name;
     public String surname;
 
     public long session;
-    //public String text;
+
     public Type type;
+
     public String table;
+    public String set;
+    public String where;
 
     public enum Type {
         REGISTRATION,
@@ -42,11 +44,21 @@ public class Query implements Serializable {
         this.pw = pw;
     }
 
-    //SELECT
-    public Query(Type type, long session, String table) {
+    //SELECT, DELETE
+    public Query(Type type, long session, String table, String where) {
         this.type = type;
         this.session = session;
         this.table = table;
+        this.where = where;
+    }
+
+    //UPDATE
+    public Query(Type type, long session, String table, String set, String where) {
+        this.type = type;
+        this.session = session;
+        this.table = table;
+        this.set = set;
+        this.where = where;
     }
 
     //SESSION_CLOSE, REQUEST_AUTHORSHIP
@@ -54,5 +66,4 @@ public class Query implements Serializable {
         this.type = type;
         this.session = session;
     }
-
 }

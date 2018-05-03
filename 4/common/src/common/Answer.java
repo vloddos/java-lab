@@ -1,7 +1,7 @@
 package common;
 
 import java.io.Serializable;
-import java.sql.ResultSet;
+import java.util.ArrayList;
 
 public class Answer implements Serializable {
 
@@ -16,7 +16,7 @@ public class Answer implements Serializable {
     public long session;
     public Role role;
 
-    public ResultSet rs;
+    public ArrayList<ArrayList<String>> al;//test
 
     public Answer(Status status, String message) {
         this.status = status;
@@ -30,9 +30,9 @@ public class Answer implements Serializable {
         this.role = role;
     }
 
-    public Answer(Status status, String message, ResultSet rs) {
+    public Answer(Status status, String message, ArrayList<ArrayList<String>> al) {
         this.status = status;
         this.message = message;
-        this.rs = rs;
+        this.al = al;
     }
 }

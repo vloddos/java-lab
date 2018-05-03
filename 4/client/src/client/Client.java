@@ -11,7 +11,7 @@ public class Client {
     public static long session;
     public static Role role;
 
-    public static void request(Query query) {
+    public static Answer request(Query query) {
         try (
                 Socket socket = new Socket("localhost", 9027);
                 ObjectInputStream in = new ObjectInputStream(socket.getInputStream());
@@ -20,8 +20,10 @@ public class Client {
             out.writeObject(query);
             Answer answer = (Answer) in.readObject();
             View.INSTANCE.parseAnswer(query.type, answer);
+            return answer;
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return null;
     }
 }

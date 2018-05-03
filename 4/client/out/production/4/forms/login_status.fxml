@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           prefHeight="50" prefWidth="150">
+    <Text StackPane.alignment="CENTER"/>
+</StackPane>

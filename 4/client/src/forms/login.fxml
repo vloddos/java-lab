@@ -5,20 +5,18 @@
 
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
-          fx:controller="client.Controller"
+          fx:controller="controllers.LoginController"
           prefHeight="150.0" prefWidth="300.0"
           alignment="CENTER" hgap="5" vgap="5">
 
     <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Login"/>
-    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="lflogin"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="login"/>
 
     <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="Password"/>
-    <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="lfpw"/>
+    <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="pw"/>
 
-    <Button GridPane.columnIndex="0" GridPane.rowIndex="2"
-            fx:id="lblogin" text="Login" onAction="#login"/>
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="2" text="Login" onAction="#login"/>
 
-    <Button GridPane.columnIndex="0" GridPane.rowIndex="3"
-            fx:id="lbreg" text="Registration" onAction="#openRegisterWindow"/>
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="3" text="Registration" onAction="#openRegisterWindow"/>
 
 </GridPane>

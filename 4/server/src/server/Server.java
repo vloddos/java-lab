@@ -13,7 +13,7 @@ public class Server {
     private Socket socket;
     private static TreeMap<Long, Integer> session_id = new TreeMap<>();
 
-    private static final String url = "jdbc:mysql://localhost:3306";
+    private static final String url = "jdbc:mysql://localhost:3306/bibliography";
     private static final String user = "root";
     private static final String password = "rootmysql";
 
@@ -59,11 +59,11 @@ public class Server {
         try {
             switch (query.type) {
                 case REGISTRATION:
-                    rs = stmt.executeQuery("SELECT id FROM `bibliography`.`user` WHERE login = " + "'" + query.login + "'");
+                    rs = stmt.executeQuery("SELECT id FROM `user` WHERE login = " + "'" + query.login + "'");
                     if (rs.next())
                         return new Answer(Answer.Status.ERROR, "This login is already taken");
                     stmt.executeUpdate(
-                            "INSERT INTO `bibliography`.`user` (`login`, `pw`, `name`, `surname`) VALUES (" +
+                            "INSERT INTO `user` (`login`, `pw`, `name`, `surname`) VALUES (" +
                                     "'" + query.login + "'," +
                                     "'" + query.pw + "'," +
                                     "'" + query.name + "'," +
@@ -71,8 +71,9 @@ public class Server {
                                     ");"
                     );
                     return new Answer(Answer.Status.OK, "Registration is successful");
+
                 case LOGIN:
-                    rs = stmt.executeQuery("SELECT * FROM `bibliography`.`user` WHERE login = " + "'" + query.login + "'");
+                    rs = stmt.executeQuery("SELECT * FROM `user` WHERE login = " + "'" + query.login + "'");
                     if (rs.next())
                         if (query.pw.equals(rs.getString("pw"))) {
                             long session = new Random().nextLong();
@@ -81,25 +82,48 @@ public class Server {
                             return new Answer(Answer.Status.OK, "", session, Role.values()[rs.getInt("role")]);
                         } else return new Answer(Answer.Status.ERROR, "Wrong password");
                     return new Answer(Answer.Status.ERROR, "Non-existent login");
+
                 case SESSION_CLOSE:
                     session_id.remove(query.session);
                     System.out.println("session " + query.session + " closed");
                     return new Answer(Answer.Status.OK, "The session is closed");
+
                 case REQUEST_AUTHORSHIP://executeQuery if rs.next ???
                     try {
                         stmt.executeUpdate(
-                                "INSERT INTO `bibliography`.`request_authorship` (`user_id`) VALUES ('" +
+                                "INSERT INTO `request_authorship` (`user_id`) VALUES ('" +
                                         session_id.get(query.session) + "');"
                         );
                     } catch (MySQLIntegrityConstraintViolationException e) {
                         return new Answer(Answer.Status.ERROR, "You have already requested authorship");
                     }
                     return new Answer(Answer.Status.OK, "Your request accepted");
+
                 case SELECT:
-                    //rs = stmt.executeQuery("SELECT * FROM `bibliography`.`" + query.table + "`");
-                    break;
+                    if (!query.where.equals(""))
+                        query.where = " WHERE " + query.where;
+                    rs = stmt.executeQuery("SELECT * FROM " + query.table + query.where + ";");
 
+                    ArrayList<ArrayList<String>> al = new ArrayList<>();
+                    while (rs.next()) {
+                        ArrayList<String> r = new ArrayList<>();
+                        for (int i = 1; i <= TableInfo.table_fields.get(query.table).length; ++i)
+                            r.add(rs.getString(i));
+                        al.add(r);
+                    }
 
+                    return new Answer(Answer.Status.OK, "", al);
+
+                case DELETE:
+                    stmt.executeUpdate("DELETE FROM " + query.table + " WHERE " + query.where + ";");
+                    return new Answer(Answer.Status.OK, "");
+
+                case UPDATE:
+                    if (!query.where.equals(""))
+                        query.where = " WHERE " + query.where;
+                    stmt.executeUpdate("UPDATE " + query.table + " SET " + query.set + query.where + ";");
+                    System.out.println("UPDATE " + query.table + " SET " + query.set + query.where + ";");
+                    return new Answer(Answer.Status.OK, "");
             }
         } catch (SQLException sqlEx) {
             sqlEx.printStackTrace();
